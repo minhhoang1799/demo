@@ -84,3 +84,23 @@ h3 {
         background: #000;
     }
 }
+
+//header-scss
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__right--top {
+    ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
