@@ -21,6 +21,7 @@
     <link href="fonts/fontawesome-free-5.15.1-web/css/fontawesome.css" rel="stylesheet">
     <link href="fonts/fontawesome-free-5.15.1-web/css/brands.css" rel="stylesheet">
     <link href="fonts/fontawesome-free-5.15.1-web/css/solid.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <!-- endbuild -->
     <!-- build:js scripts/modernizr.js -->
     <script src="scripts/modernizr.js"></script>
@@ -34,13 +35,16 @@
      <div class="container">
         <div class="header-wrapper">
           <div class="header__left">
+           <a href="/">
             <img src="images/logo.png" alt="">
+          </a>
           </div>
           <div class="header__right">
             <div class="header__right--top">
               <ul>
                 <li>
                   <a href="javascript:void(0)">
+                    <i class="fas fa-globe-asia"></i>
                     Language
                   </a>
                 </li>
@@ -56,9 +60,59 @@
                 </li>
               </ul>
             </div>
-            <div class="header__right--bottom"></div>
+            <div class="header__right--bottom">
+              <ul>
+                <li>
+                  <a href="javascript:void(0)">Home
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Pages
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Features
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Portfolio
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Blog
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contact
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <div class="btn__search">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </li>
+              </ul>
+              <div class="form__search">
+                <form action="">
+                  <input type="text", placeholder="Search...">
+                  <button type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="btn__toggle--menu">
+            <div class="menu__button"></div>
           </div>
         </div>
+        <div class="nav-mobile"></div>
      </div>
    </header>
    <main>
@@ -121,6 +175,13 @@
             </div>
           </div>
         </div>
+        <div class="swiper-prev">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="swiper-next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="swiper-pagination"></div>
      </section>
      <section class="home-1 main-section">
        <div class="container">
@@ -130,7 +191,7 @@
             the Internet tend to repeat predefined chunks as necessary, making <span>this the first</span> true generator on the Internet.</p>
          </div>
          <div class="row mt-60">
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" >
              <div class="item">
                 <div class="item__content">
                   <div class="item__content--title">
@@ -166,7 +227,7 @@
                  </div>
               </div>
              </div>
-             <div class="col-sm-6 col-lg-4">
+             <div class="col-sm-6 col-lg-4" d>
               <div class="item">
                  <div class="item__content">
                    <div class="item__content--title">
@@ -190,7 +251,7 @@
      <section class="home-2 main-section">
        <div class="container">
          <div class="row">
-           <div class="col-lg-6">
+           <div class="col-lg-6" >
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9G3VOjFUe48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            </div>
            <div class="col-lg-6 mt-30">
@@ -282,25 +343,25 @@
         <div class="row mt-60">
           <div class="col-sm-6 col-lg-3 mt-30">
             <div class="box-wrapper">
-              <p class="number">1643</p>
+              <p class="number" data-count="1643">0</p>
               <p class="des">user</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 mt-30">
             <div class="box-wrapper">
-              <p class="number">277</p>
+              <p class="number" data-count="277">0</p>
               <p class="des">projects</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 mt-30">
             <div class="box-wrapper">
-              <p class="number">78</p>
+              <p class="number" data-count="78">0</p>
               <p class="des">team members</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 mt-30">
             <div class="box-wrapper">
-              <p class="number">109</p>
+              <p class="number" data-count="109">0</p>
               <p class="des">awards</p>
             </div>
           </div>
@@ -310,7 +371,7 @@
     <section class="home-5 main-section">
       <div class="container">
         <div class="row item-list">
-          <div class="col-lg-6 item-wrapper">
+          <div class="col-lg-6 item-wrapper" >
             <div class="wrapper-left">
               <div class="item__content--title">
                 Innovation Leader
@@ -319,11 +380,11 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
               </div>
             </div>
-            <div class="wrapper-right">
+            <div class="wrapper-right mt-30">
               <img src="./images/icon/icon-4.png" alt="">
             </div>
           </div>
-          <div class="col-lg-6 item-wrapper">
+          <div class="col-lg-6 item-wrapper" >
             <div class="wrapper-left">
               <div class="item__content--title">
                 Innovation Leader
@@ -332,7 +393,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
               </div>
             </div>
-            <div class="wrapper-right">
+            <div class="wrapper-right mt-30">
               <img src="./images/icon/icon-5.png" alt="">
             </div>
           </div>
@@ -345,11 +406,11 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
               </div>
             </div>
-            <div class="wrapper-right">
+            <div class="wrapper-right mt-30">
               <img src="./images/icon/icon-6.png" alt="">
             </div>
           </div>
-          <div class="col-lg-6 item-wrapper">
+          <div class="col-lg-6 item-wrapper" >
             <div class="wrapper-left">
               <div class="item__content--title">
                 The Best In Our Field
@@ -358,11 +419,11 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
               </div>
             </div>
-            <div class="wrapper-right">
+            <div class="wrapper-right mt-30">
               <img src="./images/icon/icon-7.png" alt="">
             </div>
           </div>
-          <div class="col-lg-6 item-wrapper">
+          <div class="col-lg-6 item-wrapper" >
             <div class="wrapper-left">
               <div class="item__content--title">
                 Unlimited Support Services
@@ -371,11 +432,11 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
               </div>
             </div>
-            <div class="wrapper-right">
+            <div class="wrapper-right mt-30">
               <img src="./images/icon/icon-8.png" alt="">
             </div>
           </div>
-          <div class="col-lg-6 item-wrapper">
+          <div class="col-lg-6 item-wrapper" >
             <div class="wrapper-left">
               <div class="item__content--title">
                 A variety Of Choices
@@ -384,7 +445,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
               </div>
             </div>
-            <div class="wrapper-right">
+            <div class="wrapper-right mt-30">
               <img src="./images/icon/icon-9.png" alt="">
             </div>
           </div>
@@ -392,23 +453,23 @@
       </div>
     </section>
     <section class="news-wrapper">
-      <div class="news-box">
-        <div class="news-left">
+      <div class="news-box" >
+        <div class="news-left" >
           <img src="./images/about/ab-5.png" alt="">
         </div>
-        <div class="news-right">
+        <div class="news-right" >
           <img src="./images/about/ab-7.png" alt="">
           <div class="news__content">
             <h5 class="main-title">Aloha company</h5>
             <p>Brand Design, UI</p>
             <div class="btn__wrapper">
-              <a class="btn__wrapper--main" href="javascript:void(0)">Read About Us</a>
+              <a class="btn__wrapper--main" href="javascript:void(0)">Read More</a>
             </div>
           </div>
         </div>
       </div>
       <div class="news-box">
-        <div class="news-left">
+        <div class="news-left" >
           <img src="./images/about/ab-6.png" alt="">
         </div>
         <div class="news-right">
@@ -417,7 +478,7 @@
             <h5 class="main-title">Aloha company</h5>
             <p>Brand Design, UI</p>
             <div class="btn__wrapper">
-              <a class="btn__wrapper--main" href="javascript:void(0)">Read About Us</a> aa
+              <a class="btn__wrapper--main" href="javascript:void(0)">Read More</a>
             </div>
           </div>
         </div>
@@ -453,7 +514,7 @@
            the Internet tend to repeat predefined chunks as necessary, making <span>this the first</span> true generator on the Internet.</p>
         </div>
         <div class="row mt-60">
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3 mb-30" >
             <figure>
               <div class="item__image">
                 <img src="./images/user/1.png" alt="">
@@ -486,7 +547,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3 mb-30">
             <figure>
               <div class="item__image">
                 <img src="./images/user/2.png" alt="">
@@ -519,7 +580,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3 mb-30" >
             <figure>
               <div class="item__image">
                 <img src="./images/user/3.png" alt="">
@@ -552,7 +613,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3 mb-30">
             <figure>
               <div class="item__image">
                 <img src="./images/user/4.png" alt="">
@@ -596,13 +657,145 @@
            the Internet tend to repeat predefined chunks as necessary, making <span>this the first</span> true generator on the Internet.</p>
         </div>
         <div class="btn__wrapper">
-          <a class="btn__wrapper--main" href="javascript:void(0)">Read About Us</a>
+          <a class="btn__wrapper--main" href="javascript:void(0)" >Read About Us</a>
           <a class="btn__wrapper--main" href="javascript:void(0)">Visit Our Work</a>
         </div>
       </div>
     </section>
    </main>
-   <footer></footer>
+   <footer>
+    <div class="footer__wrapper main-section">
+      <div class="container">
+        <div class="footer__top">
+         <div class="row">
+           <div class="col-sm-6 col-lg-3">
+             <div class="logo">
+               <img src="./images/logo.png" alt="">
+             </div>
+             <div class="footer__content">
+               <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+               <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+             </div>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+             <h3 class="footer__title">Latest Posts</h3>
+             <div class="footer__box">
+               <div class="post__wrapper">
+                 <p>Incredible content</p>
+                 <time>May 8, 2014</time>
+               </div>
+               <div class="post__wrapper">
+                <p>Best shootst</p>
+                <time>June 23, 2014</time>
+              </div>
+              <div class="post__wrapper">
+                <p>New Terms and Conditions</p>
+                <time>September 15, 2014</time>
+              </div>
+             </div>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+            <h3 class="footer__title">Useful Links</h3>
+            <div class="footer__box">
+              <ul class="nav__footer">
+                <li>
+                  <a href="javascript:void(0)">About us
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Portfolio
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Latest jobs
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Comunity
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contact us
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h3 class="footer__title">Contact Us</h3>
+            <div class="footer__box">
+              <div class="footer__contact">
+                <ul>
+                  <li>25, Lorem Lis Street, Orange 
+                    California, US </li>
+                    <li>Phone: 800 123 3456 </li>
+                    <li>Fax: 800 123 3456 </li>
+                    <li>
+                      <p>Email:
+                        <span>info@anybiz.com</span>
+                      </p>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom main-section">
+      <div class="container">
+        <div class="footer__bottom--wrapper">
+          <div class="footer__bottom-left">
+            <p>2014 © All Rights Reserved.</p>
+            <ul>
+              <li>
+                <a href="javascript:void(0)">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom-right">
+            <ul>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-skype"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-google"></i>  </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-pinterest-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fas fa-basketball-ball"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </footer>
+   <div class="btn__scrollTop">
+    <i class="fas fa-arrow-up"></i>
+   </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -619,6 +812,7 @@
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script type="text/javascript" src="scripts/main.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <!-- endbuild -->
   </body>
 </html>
