@@ -83,9 +83,10 @@ function countUp(){
 
 //header sticky
 function header(){
+  var bannerHeight = $('.banner-wrapper').outerHeight()
+  console.log(bannerHeight);
   $(window).scroll(function (){
-    console.log($(window).scrollTop());
-    if($(window).scrollTop() > 0) {
+    if($(window).scrollTop() > bannerHeight) {
       $('header').addClass('active')
     }
     else {

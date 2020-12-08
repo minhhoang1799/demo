@@ -42,9 +42,13 @@
 
 .swiper-pagination {
     position: absolute;
-    bottom: 10%;
-    left: 50%;
+    bottom: 5%;
+    left: 49%;
     transform: translateX(-50%);
+    opacity: 0;
+    @media (min-width: 1025px) {
+        opacity: 1;
+    }
 }
 .swiper-pagination-bullet {
     width: 12px !important;
@@ -96,6 +100,16 @@
     margin-bottom: 30px;
     @media (min-width: 1025px){
         margin-bottom: 0;
+        &:hover {
+            cursor: pointer;
+            .item__image{
+                overflow: hidden;
+            }
+            img {
+                transform: scale(1.2);
+                transition: ease-out .3s;
+            }
+        }
     }
 }
 
@@ -488,7 +502,10 @@
             .news__content {
                opacity: 0;
                width: 100%;
-                padding: 0 20%;
+                padding: 0 25%;
+                p {
+                    margin-bottom: 15px;
+                }
             }
             &:hover {
                 img {
