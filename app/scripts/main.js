@@ -47,7 +47,8 @@ $('.btn__scrollTop').on('click', function (){
 });
 })
 $(window).scroll(function(){
-  if($(window).scrollTop() > 3970) {
+  var height = $('.banner-wrapper').outerHeight() + $('.home-1').outerHeight() + $('.home-2').outerHeight() + $('.home-3').outerHeight() + $('.home-4').outerHeight() + $('.home-5').outerHeight() + $('.home-7').outerHeight()
+  if($(window).scrollTop() > height) {
     $('.btn__scrollTop').addClass('active')
   }
   else {
@@ -57,7 +58,12 @@ $(window).scroll(function(){
 }
 function countUp(){
 $(window).scroll(function (){
-  if($(window).scrollTop() > 1450) {
+  var height = $('.banner-wrapper').outerHeight() + $('.home-1').outerHeight() + $('.home-2').outerHeight() + $('.home-3').outerHeight() + $('.home-4').outerHeight() - 200
+  var heightTop = $('.banner-wrapper').outerHeight() + $('.home-1').outerHeight() + $('.home-2').outerHeight() + $('.home-3').outerHeight() - 200;
+  console.log(heightTop);
+  console.log(height);
+  if( $(window).scrollTop() > heightTop &  $(window).scrollTop() < height) {
+    console.log('aaa');
     $('.number').each(function() {
       var $this = $(this),
           countTo = $this.attr('data-count');
@@ -67,7 +73,7 @@ $(window).scroll(function (){
       },
       {
     
-        duration: 4000,
+        duration: 6000,
         easing:'linear',
         step: function() {
           $this.text(Math.floor(this.countNum));
@@ -84,7 +90,6 @@ $(window).scroll(function (){
 //header sticky
 function header(){
 var bannerHeight = $('.banner-wrapper').outerHeight()
-console.log(bannerHeight);
 $(window).scroll(function (){
   if($(window).scrollTop() > bannerHeight) {
     $('header').addClass('active')
